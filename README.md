@@ -52,6 +52,7 @@ print("Mi A = ", miA)
 ```
 
 Agora Calculando o Wb
+
 OBS: Perceba que só mudei a forma de pegar os dados ( antes [:l], agora [l:] )
 
 ![image](https://user-images.githubusercontent.com/32250409/63232753-4763f600-c201-11e9-8c70-a0ee6eaa7c28.png)
@@ -70,5 +71,8 @@ wb = somaWB / sum(quantidade)
 wb = round(wb,4)
 print("Wb = ", wb)
 ```
+Agora calculando o Mi B
+
+![image](https://user-images.githubusercontent.com/32250409/63232798-b17c9b00-c201-11e9-8a29-e5e31606eb35.png)
 
 
