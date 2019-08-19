@@ -25,12 +25,9 @@ Agora Calculando o Wa
 somaWA = 0
 for i in intensidade[:l]:
   somaWA += quantidade[i]
-  print( "            | ",i, "-->", quantidade[i], "|" )
 
 wa = somaWA / sum(quantidade)
 wa = round(wa,4)
-print()
-print("Wa = ", wa)
 ```
 Logo em seguida, calculando o Mi A
 
@@ -39,7 +36,6 @@ Logo em seguida, calculando o Mi A
 ```
 ############### Mi Calculo ###############
 somaUA = 0
-
 for i in intensidade[:l]:
   somaUA += (i * quantidade[i])
 
@@ -49,7 +45,6 @@ else:
   miA = 0
   
 miA = round(miA,4)
-print("Mi A = ", miA)
 ```
 Calculo do Sigma A
 
@@ -57,7 +52,6 @@ Calculo do Sigma A
 
 ```
 ############### Sigma A Calculo ###############
-
 somaSigmaA = 0
 for i in intensidade[:l]:
   somaSigmaA += ((i - miA)**2) * quantidade[i]
@@ -68,8 +62,6 @@ else:
   sigmaA = 0
 
 sigmaA = round(sigmaA,4)
-print("Sigma A = ", sigmaA)
-print()
 ```
 
 
@@ -81,17 +73,12 @@ OBS: Perceba que só mudei a forma de pegar os dados ( antes [:l], agora [l:] )
 
 ```
 ############### Wb Calculo ###############
-print( "Intensidade | -------- | Quantidade" )
-
 somaWB = 0
 for i in intensidade[l:]:
   somaWB += quantidade[i]
-  print( "            | ",i, "-->", quantidade[i], "|" )
 
-print()
 wb = somaWB / sum(quantidade)
 wb = round(wb,4)
-print("Wb = ", wb)
 ```
 Agora calculando o Mi B
 
@@ -99,12 +86,12 @@ Agora calculando o Mi B
 
 ```
 ############### Mi B Caluculo #############
+somaUB = 0
 for i in intensidade[l:]:
   somaUB += (i * quantidade[i])
 
 miB = somaUB / sum(quantidade[l:])
 miB = round(miB,4)
-print("Mi B = ", miB)
 ```
 
 Calculando o Sigma B
@@ -113,14 +100,12 @@ Calculando o Sigma B
 
 ```
 ############### Sigma B Calculo ###############
-
 somaSigmaB = 0
 for i in intensidade[l:]:
   somaSigmaB += ((i - miB)**2) * quantidade[i]
 
 sigmaB = somaSigmaB / sum(quantidade[l:])
 sigmaB = round(sigmaB,4)
-print("Sigma B = ", sigmaB)
 ```
 
 Agora com os valores calculados, podemos encontrar o Sigma W
