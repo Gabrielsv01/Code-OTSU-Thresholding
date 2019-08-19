@@ -35,7 +35,7 @@ Logo em seguida, calculamos o Mi A
 
 ![image](https://user-images.githubusercontent.com/32250409/63232695-d3295280-c200-11e9-85fc-b0418461c5ec.png)
 
-````
+```
 ############### Mi Calculo ###############
 somaUA = 0
 
@@ -51,7 +51,24 @@ miA = round(miA,4)
 print("Mi A = ", miA)
 ```
 
+Agora Calculando o Wb
+OBS: Perceba que só mudei a forma de pegar os dados ( antes [:l], agora [l:] )
 
+![image](https://user-images.githubusercontent.com/32250409/63232753-4763f600-c201-11e9-8c70-a0ee6eaa7c28.png)
 
+```
+############### Wb Calculo ###############
+print( "Intensidade | -------- | Quantidade" )
+
+somaWB = 0
+for i in intensidade[l:]:
+  somaWB += quantidade[i]
+  print( "            | ",i, "-->", quantidade[i], "|" )
+
+print()
+wb = somaWB / sum(quantidade)
+wb = round(wb,4)
+print("Wb = ", wb)
+```
 
 
