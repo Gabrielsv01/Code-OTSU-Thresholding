@@ -26,3 +26,27 @@ wa = round(wa,4)
 print()
 print("Wa = ", wa)
 ```
+Logo em seguida, calculamos o Mi A
+
+![image](https://user-images.githubusercontent.com/32250409/63232695-d3295280-c200-11e9-85fc-b0418461c5ec.png)
+
+````
+############### Mi Calculo ###############
+somaUA = 0
+
+for i in intensidade[:l]:
+  somaUA += (i * quantidade[i])
+
+if (l != 0):
+  miA = somaUA / sum(quantidade[:l])
+else:
+  miA = 0
+  
+miA = round(miA,4)
+print("Mi A = ", miA)
+```
+
+
+
+
+
