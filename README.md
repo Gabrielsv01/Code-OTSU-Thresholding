@@ -15,14 +15,12 @@ Para este histograma temos:
 ```
 quantidade = [8,7,2,6,9,4]
 intensidade = [0,1,2,3,4,5]
-
 ```
 Agora Calculamos o Wa
 
 ![image](https://user-images.githubusercontent.com/32250409/63232656-6f068e80-c200-11e9-84af-ab5d33028e10.png)
 
 ```
-
 ############### Wa Calculo ###############
 somaWA = 0
 for i in intensidade[:l]:
@@ -33,14 +31,12 @@ wa = somaWA / sum(quantidade)
 wa = round(wa,4)
 print()
 print("Wa = ", wa)
-
 ```
 Logo em seguida, calculamos o Mi A
 
 ![image](https://user-images.githubusercontent.com/32250409/63232695-d3295280-c200-11e9-85fc-b0418461c5ec.png)
 
 ```
-
 ############### Mi Calculo ###############
 somaUA = 0
 
@@ -54,14 +50,12 @@ else:
   
 miA = round(miA,4)
 print("Mi A = ", miA)
-
 ```
 Calculo do Sigma A
 
 ![image](https://user-images.githubusercontent.com/32250409/63232921-aaa25800-c202-11e9-9097-cbb2eec5cef1.png)
 
 ```
-
 ############### Sigma A Calculo ###############
 
 somaSigmaA = 0
@@ -76,7 +70,6 @@ else:
 sigmaA = round(sigmaA,4)
 print("Sigma A = ", sigmaA)
 print()
-
 ```
 
 
@@ -87,7 +80,6 @@ OBS: Perceba que só mudei a forma de pegar os dados ( antes [:l], agora [l:] )
 ![image](https://user-images.githubusercontent.com/32250409/63232753-4763f600-c201-11e9-8c70-a0ee6eaa7c28.png)
 
 ```
-
 ############### Wb Calculo ###############
 print( "Intensidade | -------- | Quantidade" )
 
@@ -100,14 +92,12 @@ print()
 wb = somaWB / sum(quantidade)
 wb = round(wb,4)
 print("Wb = ", wb)
-
 ```
 Agora calculando o Mi B
 
 ![image](https://user-images.githubusercontent.com/32250409/63232798-b17c9b00-c201-11e9-8a29-e5e31606eb35.png)
 
 ```
-
 ############### Mi B Caluculo #############
 for i in intensidade[l:]:
   somaUB += (i * quantidade[i])
@@ -115,14 +105,13 @@ for i in intensidade[l:]:
 miB = somaUB / sum(quantidade[l:])
 miB = round(miB,4)
 print("Mi B = ", miB)
-
 ```
 
 Calculando o Sigma B
 
 ![image](https://user-images.githubusercontent.com/32250409/63232866-4089b300-c202-11e9-99b9-d8bcb7953b0c.png)
 
-````
+```
 ############### Sigma B Calculo ###############
 
 somaSigmaB = 0
@@ -132,5 +121,19 @@ for i in intensidade[l:]:
 sigmaB = somaSigmaB / sum(quantidade[l:])
 sigmaB = round(sigmaB,4)
 print("Sigma B = ", sigmaB)
+```
+
+Agora com os valores calculados, podemos encontrar o Sigma W
+
+![image](https://user-images.githubusercontent.com/32250409/63232740-26030a00-c201-11e9-88a6-973be1ffb626.png)
 
 ```
+############### Sigma W ###############
+sigmaW = (wa*sigmaA) + (wb * sigmaB)
+sigmaW = round(sigmaW,4)
+
+print("L = ", l)
+print("Sigma W = ", sigmaW)
+```
+
+
