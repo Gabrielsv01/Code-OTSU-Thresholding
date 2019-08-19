@@ -84,3 +84,19 @@ miB = somaUB / sum(quantidade[l:])
 miB = round(miB,4)
 print("Mi B = ", miB)
 ```
+
+Calculando o Sigma B
+
+![image](https://user-images.githubusercontent.com/32250409/63232866-4089b300-c202-11e9-99b9-d8bcb7953b0c.png)
+
+````
+############### Sigma B Calculo ###############
+
+somaSigmaB = 0
+for i in intensidade[l:]:
+  somaSigmaB += ((i - miB)**2) * quantidade[i]
+
+sigmaB = somaSigmaB / sum(quantidade[l:])
+sigmaB = round(sigmaB,4)
+print("Sigma B = ", sigmaB)
+```
