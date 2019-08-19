@@ -34,7 +34,7 @@ Logo em seguida, calculando o Mi A
 ![image](https://user-images.githubusercontent.com/32250409/63232695-d3295280-c200-11e9-85fc-b0418461c5ec.png)
 
 ```
-############### Mi Calculo ###############
+############### Mi A Calculo ###############
 somaUA = 0
 for i in intensidade[:l]:
   somaUA += (i * quantidade[i])
