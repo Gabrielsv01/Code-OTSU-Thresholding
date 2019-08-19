@@ -75,4 +75,12 @@ Agora calculando o Mi B
 
 ![image](https://user-images.githubusercontent.com/32250409/63232798-b17c9b00-c201-11e9-8a29-e5e31606eb35.png)
 
+```
+############### Mi B Caluculo #############
+for i in intensidade[l:]:
+  somaUB += (i * quantidade[i])
 
+miB = somaUB / sum(quantidade[l:])
+miB = round(miB,4)
+print("Mi B = ", miB)
+```
