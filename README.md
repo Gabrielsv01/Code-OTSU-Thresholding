@@ -16,7 +16,7 @@ Para este histograma temos:
 quantidade = [8,7,2,6,9,4]
 intensidade = [0,1,2,3,4,5]
 ```
-Agora Calculamos o Wa
+Agora Calculando o Wa
 
 ![image](https://user-images.githubusercontent.com/32250409/63232656-6f068e80-c200-11e9-84af-ab5d33028e10.png)
 
@@ -32,7 +32,7 @@ wa = round(wa,4)
 print()
 print("Wa = ", wa)
 ```
-Logo em seguida, calculamos o Mi A
+Logo em seguida, calculando o Mi A
 
 ![image](https://user-images.githubusercontent.com/32250409/63232695-d3295280-c200-11e9-85fc-b0418461c5ec.png)
 
